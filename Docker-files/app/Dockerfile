@@ -2,8 +2,8 @@ FROM openjdk:11 AS BUILD_IMAGE
 LABEL "Project" = "Vprofile"
 LABEL "Author" = "Necs"
 RUN apt-get update -y && apt-get install -y maven
-RUN git clone https://github.com/devopshydclub/vprofile-project.git
-RUN cd vprofile-project && checkout docker && mvn install  
+RUN git clone https://github.com/goognecs/vprofile-project.git
+RUN cd vprofile-project && mvn install  
 
 FROM tomcat:9-jre11 
 LABEL "Project" = "Vprofile"
