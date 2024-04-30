@@ -1,4 +1,4 @@
-FROM nginx:
+FROM nginx
 LABEL "Project" = "Vprofile"
 LABEL "Author" = "Necs"
 RUN rm -rf /etc/nginx/config.d/default.conf
